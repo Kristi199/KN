@@ -64,10 +64,10 @@ h3{
 
 #sidebar .toggle-btn{
     position: absolute;
-    left: 270px;
-    top: 20px;
+    left: 251px;
+    top: 0px;
     background-color: rgba(255, 255, 255, 0.473);
-    padding: 15px;
+    padding: 5px;
     border-radius: 60px;
     cursor: pointer;
 }

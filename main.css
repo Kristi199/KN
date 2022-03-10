@@ -283,7 +283,7 @@ footer{
     #sidebar{
         display: block;}
     .navigation{
-        display: none;
+        display: block;
     }
     .social-menu{
         display: none;

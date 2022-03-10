@@ -283,17 +283,14 @@ footer{
     #sidebar{
         display: block;}
     .navigation{
-        display: none;
-    }
+        display: none;}
     .social-menu{
         display: none;
     }
     .skl_bl_ul li {
-        width: 30%;
-    }
-
-
+        width: 30%;}
 }
+
 @media screen and (max-width: 480px) {
     .carousel-inner {
         height: 300px;}

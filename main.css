@@ -34,72 +34,52 @@ h3{
 }
 
 /*Burger*/
-.burger{
-    z-index: 1;
-    display: block;
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
+#burger_social{
+    margin-top: 15px;
+}
+#navigation_block{
     display: flex;
-    align-items: center;
+    flex-direction:column;
     text-align: center;
-    background-color: #2b3592;}
+    padding: 20px 0;
+    margin-top: 0;
+}
 
-.burger span, .burger span:before, .burger span::after {
-      display: block;
-      content: '';
-      margin: 0 auto;
-      width: 40px;
-      height: 2px;
-      background-color: rgb(252, 250, 248); }
-    
-.burger span:before {
-      transform: all 0.3s;
-      margin-top: -10px; }
-    .burger span::after {
-      transform: all 0.3s;
-      margin-top: 18px; }
-  
-.active span {
-    background-color: transparent; }
-.active span::before {
-      transform: rotate(135deg);
-      margin-top: 0; }
-.active span::after {
-      transform: rotate(-135deg);
-      margin-top: 0; }
-  
-.burger-menu {
+#sidebar{
+    display: none;
+    z-index: 2;
     position: fixed;
-    left: 0;
-    transition: all 0.5s;
-    width: 100%;
-    height: 99%;
-    transform: translate(-100%, 0px);
-    background-color: #a0a8d485;
-    z-index: 0;
-    text-align: center;
-    padding-top: 20%;
-    overflow: auto; }
-.burger-menu_active {
-      transform: translate(0px 0px); }
-.burger-menu li {
-      margin-top: 20px; }
-.burger-menu li a {
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: Montserrat;
-        font-size: 18px;
-        text-align: center; }
-.burger-menu li a:hover {
-        color: yellow; }
-.burger-menu li:hover {
-      background-color: rgba(255, 255, 255, 0.432); }
-  
+    width: 250px;
+    background-color: #4974a8ad;
+    border: 1px solid #e0e5ea;
+    left: -250px;
+    -moz-transition: all 600ms; /*для файр-фокс браузера*/
+    -webkit-transition: 600ms; /*плавное открытие в браузере Сафари*/
+    transition: all 600ms; /*общий стиль для плавного открытия меню*/
+}
+#sidebar.active{
+    left: 50px;
+}
+
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 15px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+#sidebar .toggle-btn:hover{background-color: #555;}
+#sidebar .toggle-btn:hover span {background-color: #fafafa;}
+#sidebar .toggle-btn span{
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #666;
+    margin: 4px 0;
+}  
 
 /*ПЕРВЫЙ ЭКРАН*/
 /*Общая текстовая часть*/
@@ -136,12 +116,13 @@ h3{
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.493);
 }
-.social-menu a i{
-    margin-top: 15px;
+.social-menu a img{
+    margin: 0 auto;
+    margin-top: 10px;
     width: 30px;
     height: 30px;
-
 }
+
 /*Шапка*/
 .navigation{
     margin-top: 25px;
@@ -205,9 +186,10 @@ h3{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
     justify-content: space-between;
     padding: 0;
-    margin: 0;
 }
 .skl_bl_ul li{
     padding-top: 40px;
@@ -281,10 +263,43 @@ footer{
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Cinzel';
-    padding: 7px 12px;
+    padding: 12px;
+}
+.footer a img{
+    width: 25px;
+    height: 30px;
+    padding: 2px;
 }
 .footer a:hover{
     color: rgb(27, 2, 250);
     background-color: rgba(255, 255, 255, 0.466);
     border-radius: 50px;
 }
+
+/*Media*/
+
+
+@media screen and (max-width: 768px) {
+    #sidebar{
+        display: block;}
+    .navigation{
+        display: none;
+    }
+    .social-menu{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .carousel-inner {
+        height: 300px;}
+    #sidebar .toggle-btn{
+        left: 251px;
+        top: 0px;
+        padding: 5px;
+    }
+    .skl_bl_ul li{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 320px) {}

@@ -279,7 +279,7 @@ footer{
 /*Media*/
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 818px) {
     #sidebar{
         display: block;}
     .navigation{
@@ -288,6 +288,10 @@ footer{
     .social-menu{
         display: none;
     }
+    .skl_bl_ul li {
+        width: 30%;
+    }
+
 
 }
 @media screen and (max-width: 480px) {

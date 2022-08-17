@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Neon; /* Имя шрифта */
+    src: url(fonts/NEON.TTF); /* Путь к файлу со шрифтом */
+   }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white; 
+}
+body{
+    margin: 0 auto;
+    background-color: black;
+    font-family: Neon;
+}
+
+//// Content 
+header{
+     .main{
+        display: none;}
+     .header-content{
+         .lid{
+            font-size: 30px;
+            margin-top: 50px;
+            font-family: NEON;
+            width: 100%;
+            height: 100px;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            color: #ffffff;
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+            img{
+                width: 100px;
+                padding-right: 20px;
+            }
+        }
+         .directions{
+             display: flex;
+             height: 90vh;
+           .left{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+         }
+         .right{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+           }
+         }
+      }
+}
+
+.circle{
+    padding-bottom: 200px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    .inside-circle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        a{
+            transition: 0.5s;
+            position: absolute;
+            z-index: 3;
+            top: 45%;
+            color: #ffffff;
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+        }
+        a:hover{font-size: 30px;}
+        img{
+            top: 0;
+            width: 150px;
+            top: -70px;
+            left: -50px;
+            opacity: 0;
+            transition: 0.5s;
+            }
+            img:hover{opacity: 1;}
+    }
+}

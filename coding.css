@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Neon;
+  /* Имя шрифта */
+  src: url(fonts/NEON.TTF);
+  /* Путь к файлу со шрифтом */ }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white; }
+
+body {
+  margin: 0 auto;
+  background-color: black; }
+
+h1, h2, h3 {
+  font-family: Neon;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00; }
+
+h2 {
+  text-align: center;
+  padding-bottom: 20px; }
+
+ul li {
+  list-style-type: none; }
+
+header {
+  padding: 60px 0 100px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; }
+  header .my_photo {
+    width: 200px; }
+    header .my_photo img {
+      width: 100%;
+      border-radius: 50%; }
+  header .about-me {
+    padding-top: 40px;
+    width: 600px; }
+    header .about-me h1 {
+      color: #ffffff;
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+      padding-bottom: 30px;
+      letter-spacing: 5px; }
+
+main .skills {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0px 0 50px 0; }
+  main .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0; }
+    main .skills ul li {
+      width: 33%;
+      padding-top: 40px; }
+    main .skills ul .photoshop {
+      margin-top: -40px; }
+    main .skills ul .css {
+      margin-top: -25px; }
+main .soft-skills ul li {
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+main .portfolio h2 {
+  padding-bottom: 50px; }
+main .portfolio .portfolio-img {
+  display: flex;
+  flex-wrap: wrap; }
+  main .portfolio .portfolio-img .img-cv {
+    width: 33%;
+    position: relative; }
+    main .portfolio .portfolio-img .img-cv img {
+      width: 100%; }
+  main .portfolio .portfolio-img .img-cv-txt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.438);
+    opacity: 0;
+    transparent: 0.5s; }
+    main .portfolio .portfolio-img .img-cv-txt h3 {
+      text-align: center;
+      padding-top: 20px; }
+    main .portfolio .portfolio-img .img-cv-txt ul {
+      text-align: center; }
+main .portfolio .img-cv-txt:hover {
+  opacity: 1; }
+
+/*Soft Skils*/
+footer {
+  background-color: black;
+  padding: 20px; }
+
+.footer {
+  text-align: center; }
+
+.footer a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Cinzel';
+  padding: 12px; }
+
+.footer a img {
+  width: 25px;
+  height: 30px;
+  padding: 2px; }
+
+.footer a:hover {
+  color: #1b02fa;
+  background-color: rgba(255, 255, 255, 0.466);
+  border-radius: 50px; }
+
+/*# sourceMappingURL=coding.css.map */

@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="coding.css">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    This is a beta version. It is currently under development
     <header>
-        <div class="my_photo">
+        <div class="my_photo" data-aos="fade-right" data-aos-delay="150">
             <img src="img/photo.jpeg" alt="">
         </div>
-        <div class="about-me">
+        <div class="about-me" data-aos="fade-left" data-aos-delay="150">
             <h1>Greeting!</h1>
             <p>I am Kristina Nemchenko from Ukraine. I am 28 years old. I make websites for desktop and mobile. I am proficient in HTML5, CSS3, JavaScript and many other technologies. I guarantee clean code, comments inside and cross-browser compatibility. Also, I always make changes at your request. Write to me</p>
         </div>
@@ -29,22 +28,72 @@
     </header>
     <main>
         <div class="skills">            
-                <h2>Skills:</h3>
+                <h2 data-aos="fade-up" data-aos-delay="250">Skills:</h3>
                 <ul>
-                    <li><img src="img/img_skils/html5.png" width="75"></li>
-                    <li><img class="css"src="img/img_skils/CSS3.png" width="75"></li>
-                    <li><img src="img/img_skils/sass.png" width="95"></li>
-                    <li><img src="img/img_skils/Bootstrap.png" width="85"></li>
-                    <li><img src="img/img_skils/JavaScript.png" width="75"></li>                    
-                    <li><img src="img/img_skils/git.jpeg" width="75"></li>
-                    <li><img src="img/img_skils/GitHub.png" width="75"></li>
-                    <li><img src="img/img_skils/Figma.png" width="95"></li>
-                    <li><img class="photoshop" src="img/img_skils/photoshop.png" width="145"></li>
+                    <li><img src="img/img_skils/html5.png" width="75" data-aos="flip-right" data-aos-delay="250"  data-aos-duration="1000"></li>
+                    <li><img class="css"src="img/img_skils/CSS3.png" width="75" data-aos="flip-right" data-aos-delay="300"  data-aos-duration="2000"></li>
+                    <li><img src="img/img_skils/sass.png" width="95" data-aos="flip-right" data-aos-delay="350"  data-aos-duration="1000"></li>
+                    <li><img src="img/img_skils/Bootstrap.png" width="85" data-aos="flip-right" data-aos-delay="400"></li>
+                    <li><img src="img/img_skils/JavaScript.png" width="75" data-aos="flip-right" data-aos-delay="450"></li>                    
+                    <li><img src="img/img_skils/git.jpeg" width="75" data-aos="flip-right" data-aos-delay="500"></li>
+                    <li><img src="img/img_skils/GitHub.png" width="75" data-aos="flip-right" data-aos-delay="550"></li>
+                    <li><img src="img/img_skils/Figma.png" width="95" data-aos="flip-right" data-aos-delay="600"></li>
+                    <li><img class="photoshop" src="img/img_skils/photoshop.png" width="145" data-aos="flip-right" data-aos-delay="650"></li>
                 </ul>
             </div>
             <div class="portfolio">
-                <h2>portfolio:</h2>
-                <div class="portfolio-img">
+                <h2>portfolio:</h2>                
+                    <div>
+                
+                        <input checked id="one" name="multiples" type="radio" value="1">
+                        <label for="one">1</label>
+                
+                        <input id="two" name="multiples" type="radio" value="2">
+                        <label for="two">2</label>
+                
+                        <input id="three" name="multiples" type="radio" value="3">
+                        <label for="three">3</label>
+                
+                        <input id="four" name="multiples" type="radio" value="4">
+                        <label for="four">4</label>
+                
+                        <input id="five" name="multiples" type="radio" value="5">
+                        <label for="five">5</label>
+                
+                        <input id="six" name="multiples" type="radio" value="6">
+                        <label for="six">6</label>
+
+                        <input id="seven" name="multiples" type="radio" value="7">
+                        <label for="seven">7</label>
+                
+                        <input id="eight" name="multiples" type="radio" value="8">
+                        <label for="eight">8</label>
+                
+                
+                        <div class="container">
+                            <div class="carousel">
+                                <img src="img/portfolio/studio.png" alt="Landscape 2">
+                                <img src="img/portfolio/scinn.png" alt="Landscape 1">
+                                <img src="img/portfolio/meta.png" alt="Landscape 3">
+                                <img src="img/portfolio/pharmacy.png" alt="Landscape 4">
+                                <img src="img/portfolio/techno.png" alt="Landscape 5">
+                                <img src="img/portfolio/delivery.png" alt="Landscape 6">
+                                <img src="img/portfolio/techno.png" alt="Landscape 5">
+                                <img src="img/portfolio/delivery.png" alt="Landscape 6">
+                            </div>
+                        </div>
+                
+                    </div>
+                
+                
+
+
+
+
+
+
+
+                <!--<div class="portfolio-img">
                     <div class="img-cv">
                         <img src="img/portfolio/studio.png" alt="">
                         <div class="img-cv-txt">
@@ -79,7 +128,7 @@
                     <div class="img-cv">
                         <img src="img/portfolio/delivery.png" alt="">
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -108,5 +157,9 @@
             </div>
         </div>
     </footer> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
